@@ -1,0 +1,42 @@
+.submissionWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .submissions {
+        width: 90vw;
+        height: 90vh;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background: #FFFFFF;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+    
+        .submissionHeader {
+            position: sticky;
+            top: 0;
+            background: #5578F4;
+            color: #FFFFFF;
+            padding: 18px;
+            border-bottom: #5578F4;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            .backBtn{
+                text-decoration: none;
+            }
+        }
+    
+        .submissionBody {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-top: 20px;
+    
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.numericRating {
+  border: 1px solid #DBD6D6;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px #00000040;
+  padding: 10px;
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+    .question {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  
+    .ratingContainer {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      justify-content: center;
+      width: fit-content;
+      margin: auto;
+      
+
+  
+      .ratingItem {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #f9f9f9;
+        transition: background-color 0.3s ease;
+        
+  
+        &.selected {
+          background-color: #e0e0e0;
+        }
+  
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+  
+    }
+  }
+  

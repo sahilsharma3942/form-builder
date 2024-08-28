@@ -1,0 +1,88 @@
+.formWrapper {
+  position: relative;
+
+  .formBuilder {
+    height: calc(100vh - 65px);
+    width: 100vw;
+    display: flex;
+    background: #F3F3F3;
+
+    .formBuilderLeft {
+      flex: 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .formBuilderRight {
+      flex: 1;
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  // softer shadow
+      border-left: 1px solid #dcdcdc;  // lighter border
+      padding: 20px 30px;  // more padding for a balanced layout
+      display: flex;
+      flex-direction: column;
+      gap: 25px;  // slightly larger gap for better spacing
+      font-family: Arial, sans-serif;  // similar to the font in the image
+      color: #333;  // dark text color
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #4a4a4a;  // dark gray for headings
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;  // top and bottom padding only
+          font-size: 16px;
+          cursor: pointer;
+          font-weight: 500;  // slightly bolder text
+          color: #4a4a4a;  // matching heading color
+          width: 280px;
+          
+          span{
+            .icon{
+              height: 16px;
+              width: 16px;
+            }
+          }
+        }
+      }
+
+      label {
+        font-size: 15px;
+        color: #4a4a4a;
+      }
+
+      .logicInput{
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .saveBtn {
+    position: absolute;
+    top: 15px;
+    right: 140px;
+  }
+
+  .publishBtn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+}
