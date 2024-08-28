@@ -10,8 +10,7 @@ import RadioButtons from "../RadioButtons/RadioButtons";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { Link } from "react-router-dom";
 import Categories from "../Categories/Categories";
-import { Button } from "@mui/material";
-import { addDoc, collection, doc, increment, updateDoc } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 
 const CustomForm = ({ id, name, fields, onEdit, onDelete, editMode , handleCloseModal}) => {
